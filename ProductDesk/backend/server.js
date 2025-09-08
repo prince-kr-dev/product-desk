@@ -13,7 +13,7 @@ const app = express();
 // Enable Cross-Origin Resource Sharing (CORS)
 app.use(
   cors({
-    origin: ["http://localhost:5173", "http://localhost:3000"], // your frontend URLs
+    origin: ["http://localhost:5173", "https://product-desk.vercel.app"], // your frontend URLs
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
