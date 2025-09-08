@@ -37,7 +37,7 @@ const CreatePage = () => {
           Create New Product
         </h1>
 
-        <div className="w-full bg-white dark:bg-gray-800 p-6 md:p-8 rounded-lg shadow-md">
+        <div className="w-full dark:bg-white bg-gray-800 p-6 md:p-8 rounded-lg shadow-md">
           <div className="flex flex-col space-y-4">
             <input
               type="text"

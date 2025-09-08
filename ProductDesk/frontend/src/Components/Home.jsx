@@ -15,7 +15,7 @@ function Home() {
 
   return (
     <div className="p-4">
-      <h1 className="text-4xl font-medium pb-5 text-center">All Products</h1>
+      <h1 className="text-4xl font-medium pb-5 text-center text-gray-900 dark:text-gray-200">All Products</h1>
 
       <div className="flex flex-wrap justify-center gap-6">
         {products ? (

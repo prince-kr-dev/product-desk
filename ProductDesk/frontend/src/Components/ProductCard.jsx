@@ -24,7 +24,7 @@ function ProductCard({ product, onEdit }) {
         />
       </figure>
       <div className="card-body">
-        <h2 className="card-title bg-black w-fit px-3 rounded-full">{product?.name || "Card Title"}</h2>
+        <h2 className="card-title text-gray-900 dark:text-gray-200">{product?.name || "Card Title"}</h2>
         <div className="card-actions justify-between items-center">
           <span className="font-semibold text-3xl text-green-500">
             {product?.price ? `₹${product.price}` : "₹999"}
