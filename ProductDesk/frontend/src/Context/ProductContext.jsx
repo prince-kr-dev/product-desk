@@ -5,7 +5,7 @@ const ProductContext = createContext();
 
 export const ProductProvider = ({ children }) => {
   const [products, setProducts] = useState([]);
-  const API_URL = "http://localhost:5000/api/products"; // your backend API
+  const API_URL = "https://product-desk.onrender.com/api/products"; // your backend API
 
   // ✅ GET all products
   const fetchProducts = async () => {
