@@ -24,7 +24,7 @@ function ProductCard({ product, onEdit }) {
         />
       </figure>
       <div className="card-body">
-        <h2 className="card-title">{product?.name || "Card Title"}</h2>
+        <h2 className="card-title bg-black w-fit px-3 rounded-full">{product?.name || "Card Title"}</h2>
         <div className="card-actions justify-between items-center">
           <span className="font-semibold text-3xl text-green-500">
             {product?.price ? `₹${product.price}` : "₹999"}
@@ -32,13 +32,13 @@ function ProductCard({ product, onEdit }) {
           <div className="flex gap-1">
             <button
               onClick={onEdit} 
-              className="hover:bg-gray-700 p-2 rounded-md transition-all cursor-pointer"
+              className="hover:bg-gray-700 p-2 rounded-md transition-all cursor-pointer bg-black"
             >
               <SquarePen />
             </button>
             <button
               onClick={handleDelete}
-              className="hover:bg-gray-700 p-2 rounded-md transition-all cursor-pointer"
+              className="hover:bg-gray-700 p-2 rounded-md transition-all cursor-pointer bg-black"
             >
               <Trash color="red" strokeWidth={3} />
             </button>
