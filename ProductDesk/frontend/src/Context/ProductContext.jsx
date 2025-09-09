@@ -4,7 +4,7 @@ import axios from "axios";
 const ProductContext = createContext();
 
 export const ProductProvider = ({ children }) => {
-  const [products, setProducts] = useState([]);
+  const [products, setProducts] = useState(null);
   const API_URL = "https://product-desk.onrender.com/api/products"; // your backend API
 
   // ✅ GET all products

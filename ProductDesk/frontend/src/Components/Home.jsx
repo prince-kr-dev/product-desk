@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useProducts } from "../Context/ProductContext";
 import Modal from "./Modal";
 import ProductCard from "./ProductCard";
+import  Loader  from "./Loader";
 
 function Home() {
   const { products } = useProducts();
@@ -27,7 +28,7 @@ function Home() {
             />
           ))
         ) : (
-          <h1 className="text-3xl">Loading...</h1>
+          <Loader/>
         )}
       </div>
 
